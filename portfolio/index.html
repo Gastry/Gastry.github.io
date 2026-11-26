@@ -1,66 +1,166 @@
 <!doctype html>
-<html lang="es" data-type="service">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="page-type" content="service">
-  <meta name="site-kind" content="software">
-  <meta name="description" content="Portfolio de Juan Mauricio Piano Monzó, desarrollador Android. Aplicaciones para campo, obra y taller.">
+  <meta name="description" content="Portfolio de Juan Mauricio Piano Monzó, desarrollador Android. Aplicaciones nativas para obra, campo, utilidades y juegos.">
+  <meta name="theme-color" content="#0a110e">
   <title>Juan Mauricio Piano Monzó · Portfolio Android</title>
   <link rel="canonical" href="https://gastry.github.io/portfolio/">
-  <link rel="stylesheet" href="style.css?v=2">
+  <meta property="og:title" content="Juan Mauricio Piano Monzó · Desarrollo Android">
+  <meta property="og:description" content="Aplicaciones Android nativas para obra, campo, utilidades y juegos.">
+  <meta property="og:image" content="https://gastry.github.io/portfolio/assets/s-aflorario.webp">
+  <link rel="preload" href="assets/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
-  <header class="wrap top">
-    <a class="signature" href="./">Juan Mauricio Piano Monzó</a>
-    <nav aria-label="Navegación principal"><a href="#proyectos">Proyectos</a><a href="https://www.linkedin.com/in/juan-mauricio-p-a64a7474/">LinkedIn</a></nav>
+
+  <header class="bar">
+    <div class="wrap bar-in">
+      <a class="signature" href="./"><span class="dot" aria-hidden="true"></span>Juan Mauricio Piano Monzó</a>
+      <nav aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#metodo">Cómo trabajo</a>
+        <a class="nav-cta" href="https://www.linkedin.com/in/juan-mauricio-p-a64a7474/">LinkedIn</a>
+      </nav>
+    </div>
   </header>
+
   <main id="contenido">
-    <section class="wrap hero" aria-labelledby="title">
-      <div>
-        <p class="label">Portfolio · Valencia</p>
-        <h1 id="title">Desarrollo<br>Android.</h1>
-        <p class="intro">Más de diez años desarrollando aplicaciones nativas. Aquí reúno mis proyectos propios para campo, obra y taller.</p>
-        <a class="button" href="#proyectos">Ver proyectos</a>
+    <section class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <p class="label">Portfolio · Valencia</p>
+          <h1>Apps Android<br>que se usan <em>en el terreno.</em></h1>
+          <p class="intro">Más de diez años desarrollando aplicaciones nativas. Diseño, programo y publico mis propias apps: herramientas para obra y campo, utilidades y juegos.</p>
+          <div class="actions">
+            <a class="button" href="#proyectos">Ver proyectos</a>
+            <a class="button ghost" href="https://github.com/Gastry">GitHub</a>
+          </div>
+          <ul class="stats" aria-label="Datos destacados">
+            <li><strong>10+</strong><span>años en Android</span></li>
+            <li><strong>12</strong><span>apps en Google Play</span></li>
+            <li><strong>Kotlin</strong><span>Jetpack Compose</span></li>
+          </ul>
+        </div>
+        <div class="hero-phones" aria-hidden="true">
+          <div class="phone p1"><img src="assets/s-evidobra.webp" alt=""></div>
+          <div class="phone p2"><img src="assets/medir.webp" alt=""></div>
+          <div class="phone p3"><img src="assets/s-doblacota.webp" alt=""></div>
+        </div>
       </div>
-      <a class="cover" href="https://gastry.github.io/privacy-policies/aflorario/app/" aria-label="Ver Aflorario, cuaderno geológico">
-        <div class="phones"><img src="assets/medir.webp" alt="Pantalla de medición geológica"><img src="assets/mapa.webp" alt="Pantalla de cartografía de Aflorario"></div>
-        <span class="cover-name"><img src="assets/aflorario-icon.svg" alt="" width="44" height="44"> Aflorario</span>
-      </a>
     </section>
+
     <section class="work" id="proyectos">
       <div class="wrap">
-        <h2>Proyectos seleccionados</h2>
-        <div class="grid">
-          <a class="card" href="https://gastry.github.io/privacy-policies/aflorario/app/">
-            <div class="visual"><img loading="lazy" src="assets/aflorario.webp" alt=""></div>
-            <div class="details"><img src="assets/aflorario-icon.svg" alt="" width="48" height="48"><div><h3>Aflorario</h3><p>Cuaderno geológico con brújula, clinómetro y mapas sin conexión.</p></div></div>
-          </a>
-          <a class="card" href="https://gastry.github.io/privacy-policies/evidobra/app/plantilla-informe-visita-obra.html">
-            <div class="visual"><img loading="lazy" src="assets/evidobra.webp" alt=""></div>
-            <div class="details"><img src="assets/evidobra-icon.svg" alt="" width="48" height="48"><div><h3>Evidobra</h3><p>Registro fotográfico de visitas a obra y exportación de informes en PDF.</p></div></div>
-          </a>
-          <a class="card" href="https://gastry.github.io/privacy-policies/doblacota/app/">
-            <div class="visual"><img loading="lazy" src="assets/doblacota.webp" alt=""></div>
-            <div class="details"><img src="assets/doblacota-icon.webp" alt="" width="48" height="48"><div><h3>Doblacota</h3><p>Cálculo de desplazamientos y distancias entre dobleces para instaladores.</p></div></div>
-          </a>
-          <a class="card" href="https://peldaplan.pages.dev/">
-            <div class="visual"><img loading="lazy" src="assets/peldaplan.webp" alt=""></div>
-            <div class="details"><img src="assets/peldaplan-icon.webp" alt="" width="48" height="48"><div><h3>PeldaPlan</h3><p>Diseño de escaleras con vista 3D y plantillas de peldaños a escala real.</p></div></div>
-          </a>
+        <div class="section-head">
+          <p class="label">Obra y campo</p>
+          <h2>Herramientas profesionales</h2>
+          <p class="lead">Apps pensadas para usarse con guantes, al sol y sin cobertura.</p>
         </div>
-        <div class="technical">
-          <div class="details"><img src="assets/impostor.svg" alt="" width="48" height="48"><div><h3>El Impostor</h3><p>Juego Android sin conexión con Kotlin, Jetpack Compose y persistencia local. El repositorio incluye pruebas unitarias e instrumentadas.</p></div></div>
-          <div class="links"><a href="https://gastry-apps.pages.dev/el-impostor/">Ver app</a><a href="https://github.com/Gastry/impostor-android">Ver código</a></div>
+
+        <div class="grid">
+          <article class="card" style="--tint:#2f8f5f">
+            <div class="visual"><div class="phone"><img loading="lazy" src="assets/s-aflorario.webp" alt="Cuaderno de campo de Aflorario con notas y medidas"></div></div>
+            <div class="body">
+              <div class="title"><img src="assets/aflorario-icon.svg" alt="" width="48" height="48"><div><h3>Aflorario</h3><p class="kicker">Cuaderno geológico</p></div></div>
+              <p>Brújula, clinómetro, fotos, estereonets y mapas sin conexión en un cuaderno de campo.</p>
+              <div class="links"><a href="https://gastry.github.io/privacy-policies/aflorario/app/">Ver web →</a><a href="https://play.google.com/store/apps/details?id=com.gastry.aflorario">Google Play ↗</a></div>
+            </div>
+          </article>
+
+          <article class="card" style="--tint:#2b7a6a">
+            <div class="visual"><div class="phone"><img loading="lazy" src="assets/s-evidobra.webp" alt="Listado de obras e incidencias en Evidobra"></div></div>
+            <div class="body">
+              <div class="title"><img src="assets/evidobra-icon.svg" alt="" width="48" height="48"><div><h3>Evidobra</h3><p class="kicker">Informes de obra</p></div></div>
+              <p>Registro fotográfico de visitas a obra e incidencias, con exportación de informes en PDF.</p>
+              <div class="links"><a href="https://gastry.github.io/privacy-policies/evidobra/app/plantilla-informe-visita-obra.html">Ver web →</a><a href="https://play.google.com/store/apps/details?id=com.gastry.evidobra">Google Play ↗</a></div>
+            </div>
+          </article>
+
+          <article class="card" style="--tint:#2a9a86">
+            <div class="visual"><div class="phone"><img loading="lazy" src="assets/s-doblacota.webp" alt="Cálculo de desplazamiento entre dobleces en Doblacota"></div></div>
+            <div class="body">
+              <div class="title"><img src="assets/doblacota-icon.webp" alt="" width="48" height="48"><div><h3>Doblacota</h3><p class="kicker">Doblado de tubos</p></div></div>
+              <p>Desplazamientos, distancia entre dobleces y pérdida de alcance según el radio de tu dobladora.</p>
+              <div class="links"><a href="https://gastry.github.io/privacy-policies/doblacota/app/">Ver web →</a><a href="https://play.google.com/store/apps/details?id=com.aplicaciones.gastry.doblacota">Google Play ↗</a></div>
+            </div>
+          </article>
+
+          <article class="card" style="--tint:#3a8fa0">
+            <div class="visual"><div class="phone"><img loading="lazy" src="assets/s-peldaplan.webp" alt="Escalera en 3D en PeldaPlan"></div></div>
+            <div class="body">
+              <div class="title"><img src="assets/peldaplan-icon.webp" alt="" width="48" height="48"><div><h3>PeldaPlan</h3><p class="kicker">Cálculo de escaleras</p></div></div>
+              <p>Diseño de escaleras con vista 3D y plantillas de peldaños a escala real.</p>
+              <div class="links"><a href="https://peldaplan.pages.dev/">Ver web →</a><a href="https://play.google.com/store/apps/details?id=com.aplicaciones.gastry.peldaplan">Google Play ↗</a></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-head second">
+          <p class="label">Utilidades y juegos</p>
+          <h2>Para el día a día</h2>
+          <p class="lead">Apps ligeras, sin registro y pensadas para funcionar sin conexión.</p>
+        </div>
+
+        <div class="grid three">
+          <article class="card" style="--tint:#4f5fe0">
+            <div class="visual"><div class="phone"><img loading="lazy" src="assets/s-deckstore.webp" alt="Biblioteca de mazos en DeckStore"></div></div>
+            <div class="body">
+              <div class="title"><img src="assets/deckstore-icon.webp" alt="" width="48" height="48"><div><h3>DeckStore</h3><p class="kicker">Organizador de mazos</p></div></div>
+              <p>Guarda y organiza tus mazos de Clash Royale con etiquetas, favoritos y notas.</p>
+              <div class="links"><a href="https://gastry-apps.pages.dev/deckstore/">Ver web →</a><a href="https://play.google.com/store/apps/details?id=com.aplicaciones.gastry.deckstore">Google Play ↗</a></div>
+            </div>
+          </article>
+
+          <article class="card" style="--tint:#e0567a">
+            <div class="visual"><div class="phone"><img loading="lazy" src="assets/s-infiltrado.webp" alt="Resultado de una ronda en El Infiltrado"></div></div>
+            <div class="body">
+              <div class="title"><img src="assets/infiltrado-icon.webp" alt="" width="48" height="48"><div><h3>El Infiltrado</h3><p class="kicker">Juego de grupo</p></div></div>
+              <p>Deducción social para fiestas y reuniones: engaña, vota y revela con un solo móvil.</p>
+              <div class="links"><a href="https://gastry-apps.pages.dev/el-infiltrado/">Ver web →</a><a href="https://play.google.com/store/apps/details?id=com.gastry.elinfiltrado">Google Play ↗</a></div>
+            </div>
+          </article>
+
+          <article class="card" style="--tint:#e8a93a">
+            <div class="visual"><div class="tablet"><img loading="lazy" src="assets/s-pintapim.webp" alt="Pantalla de colorear en PintaPim"></div></div>
+            <div class="body">
+              <div class="title"><img src="assets/pintapim-icon.webp" alt="" width="48" height="48"><div><h3>PintaPim</h3><p class="kicker">Juego infantil</p></div></div>
+              <p>Dibujo y color para peques: colorear, números, mandalas, pixel art y trazos de luz.</p>
+              <div class="links"><a href="https://gastry.github.io/privacy-policies/cuaderno-de-color/">Ver web →</a></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    <section class="wrap method">
-      <h2>Cómo trabajo</h2>
-      <p>En mis proyectos aplico desarrollo asistido por IA guiado por especificaciones (Spec-Driven Development). Defino criterios de aceptación y uso arneses de ejecución y guardarraíles para limitar la actuación de los agentes. Reviso personalmente el código y valido los cambios con pruebas.</p>
+
+    <section class="method" id="metodo">
+      <div class="wrap method-in">
+        <div>
+          <p class="label">Método</p>
+          <h2>Cómo trabajo</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><span>01</span><h3>Especificación</h3><p>Desarrollo asistido por IA guiado por especificaciones (Spec-Driven Development), con criterios de aceptación claros.</p></div>
+          <div class="step"><span>02</span><h3>Guardarraíles</h3><p>Arneses de ejecución y límites definidos para acotar lo que pueden hacer los agentes.</p></div>
+          <div class="step"><span>03</span><h3>Revisión y pruebas</h3><p>Reviso personalmente el código y valido cada cambio con pruebas antes de publicar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="wrap contact-in">
+        <h2>¿Hablamos?</h2>
+        <p>Si buscas un desarrollador Android con apps publicadas y mantenidas, escríbeme.</p>
+        <a class="button" href="https://www.linkedin.com/in/juan-mauricio-p-a64a7474/">Contactar por LinkedIn</a>
+      </div>
     </section>
   </main>
-  <footer class="wrap top"><span>Juan Mauricio Piano Monzó</span><nav aria-label="Perfiles"><a href="https://github.com/Gastry">GitHub</a><a href="https://www.linkedin.com/in/juan-mauricio-p-a64a7474/">LinkedIn</a></nav></footer>
+
+  <footer class="wrap foot">
+    <span>© Juan Mauricio Piano Monzó</span>
+    <nav aria-label="Perfiles"><a href="https://github.com/Gastry">GitHub</a><a href="https://www.linkedin.com/in/juan-mauricio-p-a64a7474/">LinkedIn</a><a href="https://gastry.github.io/privacy-policies/apps/">Todas las apps</a></nav>
+  </footer>
 </body>
 </html>
